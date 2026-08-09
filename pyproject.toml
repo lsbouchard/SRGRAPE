@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srgrape"
+version = "0.1.0"
+description = "Sub-Riemannian gradient ascent pulse engineering for quantum control"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Ryan Choi"},
+  {name = "Vwani Roychowdhury"},
+  {name = "Louis-S. Bouchard", email = "lsbouchard@ucla.edu"},
+]
+dependencies = [
+  "numpy>=2.3,<3",
+  "scipy>=1.13",
+  "qutip>=5.2,<6",
+]
+
+[project.urls]
+Repository = "https://github.com/lsbouchard/SRGRAPE"
+
+[project.scripts]
+srgrape = "srgrape.core:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
