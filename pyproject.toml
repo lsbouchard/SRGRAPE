@@ -24,7 +24,7 @@ dependencies = [
 Repository = "https://github.com/lsbouchard/SRGRAPE"
 
 [project.scripts]
-srgrape = "srgrape.core:main"
+srgrape = "srgrape.srgrape:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

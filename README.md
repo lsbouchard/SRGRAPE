@@ -26,11 +26,11 @@ numerical result archives, or generated figures.
     └── srgrape/
         ├── __init__.py
         ├── __main__.py
-        └── core.py
+        └── srgrape.py
 ```
 
-The implementation is in `src/srgrape/core.py`. The package can be run through
-the `srgrape` command or as `python -m srgrape`.
+The implementation is in `src/srgrape/srgrape.py`. The package can be run
+through the `srgrape` command or as `python -m srgrape`.
 
 ## Requirements
 

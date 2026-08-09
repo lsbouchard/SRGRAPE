@@ -1,6 +1,6 @@
 """Command-line entry point for ``python -m srgrape``."""
 
-from .core import main
+from .srgrape import main
 
 
 if __name__ == "__main__":
